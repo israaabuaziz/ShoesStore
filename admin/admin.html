@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>ADMIN</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <!-- <button type="button" onclick="changeCSS('style3.css',0)">lilac</button>
+        <button type="button" onclick="changeCSS('style2.css',0);">mint green</button>
+        <button type="button" onclick="changeCSS('style.css', 0);">rose</button> -->
+        <form class="input-group"action="_blank" method="POST">
+            <!-- <b>Login</b><br><br><br> -->
+            <br><input class="input-field" id="user"type="text" name="username" placeholder="Username" required ><br><br>
+            <input class="input-field" id="pass" type="hidden" name="pass" placeholder="Password" required><br><br>
+            <button type="submit" class="subbtn" onclick="remove()">Remove User</button>             
+        </form>
+    
+    <script>
+        function remove (){
+            event.preventDefault();
+            var username = document.getElementById('user').value;
+            var pass = document.getElementById('pass').value;
+            // var result = document.getElementById('result');
+
+            var user = localStorage.getItem(username);
+            var date = JSON.parse(user);
+            localStorage.removeItem(username);
+            
+        }
+        
+        function changeCSS(cssFile, cssLinkIndex) {
+
+var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+
+document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+    </script>
+    </body>
+</html>

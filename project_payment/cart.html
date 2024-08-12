@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHECKOUT</title>
+        <script src="payment.js"></script>
+        
+        <link rel="stylesheet" href="payment.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="/index.html" class="logo">log out</a>
+            <nav class="navbar">
+            <a class="navigbar" href="#home">Home</a>
+            <a class="navigbar" href="#product">Product</a>
+            <a class="navigbar" href="#featured">Featured</a>
+            <a class="navigbar" href="#news">News</a>
+        </nav>
+        <div class="icons">
+            <a class="iconbar" href="#"><i class="	fa fa-heart"></i></a>
+            <a class="iconbar" href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a class="iconbar" href="#"><i class="	fa fa-user"></i></a>
+        </div>
+        </header>
+            <div class="split left">
+                <div class="centered">
+                    <div class="form">
+                        <h3 class="h3">Secure checkout</h3>
+                        <form>
+                            <label class="labels" for="email">E-mail   address</label><br>
+                            <input type="email" id="email"><br>
+                            <label class="labels" for="cardno">Card number</label><br>
+                            <input type="text" id="cardno"><br>
+                            <label class="labels" for="expiration">Expiration date</label><br>
+                            <div id="expiration">
+                                <select id="month">
+                                    <option value="default">default</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select id="year">
+                                    <option value="default">default</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                </select>
+                                <input type="text" id="security" placeholder="security code">
+                                
+                            </div><br>
+                            <input type="text" id="name" placeholder="Name on the card"><br>
+                            <div class="terms">
+                                <p class="conditions">By placing this order you agree to the </p><a id="termslink" href="">Terms and conditions</a>
+                                
+                            </div>
+                            <br>
+                            <input type="button" value="Place order" id="submitbtn" onclick="purchased()">
+
+                            
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="split right">
+                <div class="centered">
+                    <div class="discount">
+                        <div class="discountimagebox">
+                         <img id="discountimage" src="./images/icons8-get-a-discount-64.png">
+                        </div>
+                         <input type="text" id="discountbox" placeholder="Have a discount code?">
+                        <div class="price">
+                          <label for="pricebefore">Total price:</label>  
+                          <input type="text" id="pricebefore" placeholder="$0"><br>
+                          <label for="discount">Discount:</label>
+                          <input type="text" id="discount" placeholder="$0"><br>
+                          <label for="priceafter">After discount:</label>
+                          <input type="text" id="priceafter" placeholder="$0"><br>
+
+                        </div><br>
+                    </div>
+                    <div class="img2">
+                        <img id="quality" src="./images/icons8-quality-64.png">
+                        <p id="largetxt">High shopping quality </p>
+                          <p id="largetxt2">  Money back guarantee
+                        </p>
+                        <p class="smalltxt">within 30 days of purchase</p>
+                        
+                    
+                    </div>
+                    
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,254 @@
+*{
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s linear;
+  font-size: 60%;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  
+}
+header .logo{
+  font-size: 2rem;
+  color: #000;
+  font-weight: 400;
+}
+header .logo:hover{
+  color: red;
+}
+.navigbar{
+  font-size: 2rem;
+  color: #000;
+  margin: 0 2rem;
+}
+.navigbar:hover{
+  color: red;
+}
+.iconbar{
+  font-size: 2rem;
+  color: #000;
+  margin-left: 1.5rem;
+}
+.iconbar:hover{
+  color: red;
+}
+
+  .h3{
+    font-size: x-large;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 25px;
+    border-bottom: 1px brown;
+    padding-top: 75px;
+    
+
+  }
+  .form{
+    padding-top: 350px;
+    padding-left: 400px;
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    color: black;
+    font-size: x-large;
+
+  }
+  .labels{
+    font-size: larger;
+  }
+  #email,#cardno,#name{
+    width: 175%;
+    padding: 8px 12px;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  #email:focus,#cardno:focus,#name:focus,#security:focus{
+    border-color: brown;
+    background-color: cornsilk;
+    color: rgb(0, 0, 0);
+  }
+  #expiration{
+    justify-content: space-evenly;
+  
+  }
+  #month,#year{
+    padding:8px 12px;
+    padding-right: 8px;
+    color: brown;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  option{
+    font-size: 14px;
+  }
+  #security{
+    padding: 8px 12px;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  .split{
+    margin-top: 50px;
+    width:50%;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+  }
+  .left{
+    left: 0;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+  }
+  .right{
+    right: 0;
+    background-image: url(./images/\'Red\ Marble\ Texture\'\ Poster\ by\ Aloke\ Design\ _\ Displate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+  }
+  .centered{
+    margin-top: 50px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+  }
+  .terms{
+    width: 175%;
+    padding-top: 15px;
+
+  }
+  .conditions{
+    text-align: center;
+    padding-left: 70px;
+    font-size: 15PX;
+    display: inline;
+  }
+  #termslink{
+    font-size: 15px;
+    color: brown;
+  }
+  #termslink:hover{
+    color:rgb(223, 186, 0);
+  }
+  #submitbtn{
+    width: 180%;
+    color: white;
+    padding: 8px 12px;
+    background-color: brown;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Manrope', sans-serif;
+    border-color: white;
+  }
+  #submitbtn:hover{
+    color:black;
+    background-color: rgb(223, 186, 0) ;
+  }
+  #discountbox{
+    margin-left: 57%;
+    padding: 8px 12px;
+    width: 75%;
+    border-radius: 4px;
+    border-style: double;
+    border-color: black;
+    margin-top: 3%;
+    font-size: 15px;
+  }
+  #logo{
+    font-family: 'Manrope', sans-serif;
+    font-size: x-large;
+    text-align: left;
+    color:white;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+ .price{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 5%;
+
+  }
+  #pricebefore,#discount,#priceafter{
+    background-color: transparent;
+    border-radius: 4px;
+    border-style: double;
+    border-color: white;
+    padding: 8px 12px;
+    margin-left:127%;
+    width:15%;
+    margin-bottom:2px;
+    color: white;
+    font-size: 15px;
+
+
+  }
+  #pricebefore:focus,#priceafter:focus,#discount:focus,#discountbox:focus{
+    border-color: brown;
+    background-color: cornsilk;
+    color: rgb(0, 0, 0);
+
+  }
+  #discountimage{
+    margin-left: 25%;
+    filter: brightness(0)invert(1);
+    
+  }
+  #quality{
+    margin-left: 20%;
+    filter: brightness(0)invert(1);
+    height: auto;
+    width: auto;
+  }
+  .discountimagebox{
+    margin-top: 35%;
+  }
+  #largetxt{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    margin-left: 44%;
+    font-size: 15px;
+  }
+  #largetxt2{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    margin-left: 44%;
+    font-size: 15px;
+
+  }
+ .smalltxt{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: x-small;
+    margin-left: 45%;
+ }
+  

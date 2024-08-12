@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+    <script src="./project_payment/payment.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <div id="menu-bar" class="fa fa-bars"></div>
+    <a href="/index.html" class="logo">log out</a>
+    <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#product">Product</a>
+    <a href="#featured">Featured</a>
+    <a href="#news">News</a>
+</nav>
+<div class="icons">
+    <span><i class="fa fa-heart"></i></span>
+    <span id="carticon" onclick="showcart()" ><i class="fa fa-shopping-cart"></i></span>
+    <span><i class="	fa fa-user" onclick="window.location.href = 'index.html'"></i></span>
+</div>
+</header>
+<!-- end header -->
+<section class="home" id="home">
+<div class="slide-container active">
+    <div class="slide">
+        <div class="content">
+            <span>HIGH FASHION</span>
+            <h3 class="cart-item-title">DANIELLA BLOCK HEEL SANDAL</h3>
+            <pre>
+                Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit Sunt nam adipisci ipsa officiis
+                Ametpariatur eaque soluta sit iure neque voluptate.
+            </pre>
+            <span class="realprice"> $120 </span><br>
+            <span class="cartbtn cart-btn-slider" id="cartbtn1">add to cart</span>
+        </div>
+        <div class="image">
+            <img src="imgs/1.png" class="shoe">
+        </div>
+    </div>
+</div>
+<div class="cart-container">
+      <div id="cart" class="cart">
+        <div class="cart-total-container ">
+          <h5>total</h5>
+          <h5> $ <strong id="cart-total" >0</strong> </h5>
+        </div>
+        <div class="cart-buttons-container ">
+          <a href="#" id="clear-cart" class="clear-cart-btn">clear cart</a>
+          <a href="./project_payment/cart.html" class="checkoutbtn">checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="slide-container">
+    <div class="slide">
+        <div class="content">
+            <span>HIGH FASHION</span>
+            <h3 class="cart-item-title">ALISON WESTERN MULE</h3>
+            <pre>
+            Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit Sunt nam adipisci ipsa officiis
+            Ametpariatur eaque soluta sit iure neque voluptate.
+            </pre>
+            <span class="realprice"> $120 </span><br>
+            <span class="cartbtn cart-btn-slider">add to cart</span>
+        </div>
+        <div class="image">
+            <img src="imgs/2.png" class="shoe">
+        </div>
+    </div>
+</div>
+<div class="slide-container">
+    <div class="slide">
+        <div class="content">
+            <span>HIGH FASHION</span>
+            <h3 class="cart-item-title">OPHELIA ANKLE STRAP HEEL</h3>
+            <pre>
+            Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit Sunt nam adipisci ipsa officiis
+            Ametpariatur eaque soluta sit iure neque voluptate.
+            </pre>
+            <span class="realprice"> $120 </span><br>
+            <a class="cartbtn cart-btn-slider">add to cart</a>
+        </div>
+        <div class="image">
+            <img src="imgs/3.png" class="shoe">
+        </div>
+    </div>
+</div>
+<div class="slide-container">
+    <div class="slide">
+        <div class="content">
+            <span>HIGH FASHION</span>
+            <h3 class="cart-item-title">ANTONIA POINTED TOE PUMP</h3>
+            <pre>
+            Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit Sunt nam adipisci ipsa officiis
+            Ametpariatur eaque soluta sit iure neque voluptate.
+            </pre>
+            <span class="realprice"> $120 </span><br>
+            <span class="cartbtn cart-btn-slider">add to cart</span>
+        </div>
+        <div class="image">
+            <img src="imgs/4.png" class="shoe">
+        </div>
+    </div>
+</div>
+<div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+<div id="next" class="fa fa-angle-right" onclick="next();"></div>
+</section> 
+
+<!--end-->
+
+<section class="product" id="product">
+    <h1 class="heading">latest <span>Products</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-share"></a>
+                <a href="#" class="fa fa-eye"></a>
+                <span class="fa fa-shopping-cart cartbtn cart-btn-product"></span>
+            </div>
+            <div class="content">
+                <img src="imgs/121.png" alt="">
+                <h3 class="cart-item-title">CALLAMU</h3>
+                <div class="price"><span class="realprice"> $200 </span><span class="beforediscount">$250</span></div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-share"></a>
+                <a href="#" class="fa fa-eye"></a>
+                <span class="fa fa-shopping-cart cartbtn cart-btn-product"></span>
+            </div>
+            <div class="content">
+                <img src="imgs/122.png" alt="">
+                <h3 class="cart-item-title">BARIMU</h3>
+                <div class="price"><span class="realprice"> $175 </span><span class="beforediscount">$200</span></div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-share"></a>
+                <a href="#" class="fa fa-eye"></a>
+                <span class="fa fa-shopping-cart cartbtn cart-btn-product"></span>
+            </div>
+            <div class="content">
+                <img src="imgs/123.png" alt="">
+                <h3 class="cart-item-title">PIERALO</h3>
+                <div class="price"><span class="realprice"> $120 </span><span class="beforediscount">$160</span></div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-share"></a>
+                <a href="#" class="fa fa-eye"></a>
+                <span class="fa fa-shopping-cart cartbtn cart-btn-product"></span>
+            </div>
+            <div class="content">
+                <img src="imgs/124.png" alt="">
+                <h3 class="cart-item-title">LUPASCA</h3>
+                <div class="price"><span class="realprice"> $300 </span><span class="beforediscount">$350</span></div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-share"></a>
+                <a href="#" class="fa fa-eye"></a>
+                <span class="fa fa-shopping-cart cartbtn cart-btn-product"></span>
+            </div>
+            <div class="content">
+                <img src="imgs/125.png" alt="">
+                <h3 class="cart-item-title">VONGOL</h3>
+                <div class="price"><span class="realprice"> $110 </span><span class="beforediscount">$150</span></div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-share"></a>
+                <a href="#" class="fa fa-eye"></a>
+                <span class="fa fa-shopping-cart cartbtn cart-btn-product"></span>
+            </div>
+            <div class="content">
+                <img src="imgs/126.png" alt="">
+                <h3 class="cart-item-title">CRINASTRA</h3>
+                <div class="price"><span class="realprice"> $100 </span><span class="beforediscount">$170</span></div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end product-->
+
+        <section class="featured" id="fearured">
+            <h1 class="heading">New <span>Product</span></h1>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="imgs/pic1.png" alt="" class="featured-image-1">
+                        <img src="imgs/pic2.png" alt="" class="featured-image-1">
+                        <img src="imgs/pic3.png" alt="" class="featured-image-1">
+                        <img src="imgs/pic4.png" alt="" class="featured-image-1">
+                    </div>
+                    <div class="big-image">
+                        <img src="imgs/pic4.png" alt="" class="big-image-1">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 class="cart-item-title">RAYELLE KITTEN HEEL</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price"><span class="realprice"> $90 </span><span class="beforediscount">$120</span></div><br>
+                    <span class="btn cartbtn cart-btn-featured">add to cart</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="imgs/pic21.png" alt="" class="featured-image-2">
+                        <img src="imgs/pic22.png" alt="" class="featured-image-2">
+                        <img src="imgs/pic23.png" alt="" class="featured-image-2">
+                        <img src="imgs/pic24.png" alt="" class="featured-image-2">
+                    </div>
+                    <div class="big-image">
+                        <img src="imgs/pic24.png" alt="" class="big-image-2">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 class="cart-item-title">HAZEL POINTED TOE HEEL</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price"><span class="realprice"> $90 </span><span class="beforediscount">$120</span></div><br>
+                    <span class="btn cartbtn cart-btn-featured">add to cart</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="imgs/pic31.png" alt="" class="featured-image-3">
+                        <img src="imgs/pic32.png" alt="" class="featured-image-3">
+                        <img src="imgs/pic33.png" alt="" class="featured-image-3">
+                        <img src="imgs/pic34.png" alt="" class="featured-image-3">
+                    </div>
+                    <div class="big-image">
+                        <img src="imgs/pic34.png" alt="" class="big-image-3">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 class="cart-item-title">THALIA BUCKLE KITTEN HEEL</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price"><span class="realprice"> $90 </span><span class="beforediscount">$120</span></div><br>
+                    <span class="btn cartbtn cart-btn-featured">add to cart</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="imgs/pic41.png" alt="" class="featured-image-4">
+                        <img src="imgs/pic42.png" alt="" class="featured-image-4">
+                        <img src="imgs/pic43.png" alt="" class="featured-image-4">
+                        <img src="imgs/pic44.png" alt="" class="featured-image-4">
+                    </div>
+                    <div class="big-image">
+                        <img src="imgs/pic44.png" alt="" class="big-image-4">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 class="cart-item-title">BIANKA SLINGBACK PUMP</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price"><span class="realprice"> $90 </span><span class="beforediscount">$120</span></div><br>
+                    <span class="btn cartbtn cart-btn-featured">add to cart</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="imgs/pic51.png" alt="" class="featured-image-5">
+                        <img src="imgs/pic52.png" alt="" class="featured-image-5">
+                        <img src="imgs/pic53.png" alt="" class="featured-image-5">
+                        <img src="imgs/pic54.png" alt="" class="featured-image-5">
+                    </div>
+                    <div class="big-image">
+                        <img src="imgs/pic54.png" alt="" class="big-image-5">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 class="cart-item-title">QUINCY BLOCK HEEL LOAFER</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price"><span class="realprice"> $90 </span><span class="beforediscount">$120</span></div><br>
+                    <span class="btn cartbtn cart-btn-featured">add to cart</span>
+                </div>
+            </div>
+        </section>
+        <!--end featured-->
+        <section class="news" id="news">
+            <div class="content">
+                <h3>monthly news letter</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
+                </p>
+            </div>
+        </section>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="style-1.css">
+		<script src="main.js"></script>
+    </head>
+<body>
+	<div class="bckgrnd">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="switchingBtn" onclick="login()">Login</button>
+                <button type="button" class="switchingBtn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group"action="_blank" method="POST">
+                <!-- <b>Login</b><br><br><br> -->
+                <br><input class="input-field" id="user" type="text" name="username" placeholder="Username (Must be 10 letters)" required pattern="[A-Za-z]{10}"><br><br>
+                <input class="input-field" id="pass" type="password" name="pass" placeholder="Password (Must be more then 8 characters)" required pattern=".{8,}"><br><br>
+                <input type="checkbox" class="checkbx"> <span>Remember me</span>
+                <button type="submit" class="subbtn" onclick="login1(); check();">Login</button> <br> <!--check-->
+            </form>
+            <form id="register" class="input-group" method="POST">    <!--action="/project.html"-->
+                <!-- <b>Login</b><br><br><br> -->
+                <br><input class="input-field" type="text" name="username" placeholder="Username (Must be 10 letters)" required id="username" pattern="[A-Za-z]{10}"><br><br>
+                <br><input class="input-field" type="email" name="email" placeholder="Email" required id="email"><br><br>
+                <input class="input-field" type="password" name="pass" placeholder="Password (Must be more then 8 characters)" required id="password" pattern=".{8,}"><br><br>
+                <input type="checkbox" class="checkbx" required> <span>I agree to the terms and conditions</span>
+                <button type="submit" class="subbtn" onclick="register1()">Register</button> <br>
+                
+            </form>
+	
+        
+    </div>
+    </div>
+    <script>
+        let x = document.getElementById("login")
+        let y = document.getElementById("register")
+        let z = document.getElementById("btn")
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function register1(){
+            event.preventDefault();
+            let username = document.getElementById('username').value;
+            let email = document.getElementById('email').value;
+            let pass = document.getElementById('password').value;
+
+            let user = {
+                email: email,
+                username: username,
+                password: pass,
+            };
+            let json = JSON.stringify(user);
+            localStorage.setItem(username, json);
+            if(username.value == "" && pass.value == ""){
+                console.log(alert("Empty Fields!"));
+            }
+            else 
+                window.location.href="/indexh.html";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+        function login1 (){
+            event.preventDefault();
+            var username = document.getElementById('user').value;
+            var pass = document.getElementById('pass').value;
+            // var result = document.getElementById('result');
+
+            var user = localStorage.getItem(username);
+            var date = JSON.parse(user);
+            console.log(localStorage.getItem(username));
+            if (username == "admin" & pass == "admin"){
+                window.location.href="/admin/admin.html";
+            }
+            if (user == null) {
+                alert('wrong username');
+                // result.innerHTML = 'wrong username';
+            }
+            else if (username == date.username && pass == date.password){
+                
+                // result.innerHTML = 'logged in';
+                window.location.href="/indexh.html";
+            }
+            else {
+                alert('wrong password');
+                // result.innerHTML = 'wrong password';
+            }
+        }
+        function check() {
+            let a = document['getElementById']('user')['value'];
+            let b = document['getElementById']('pass')['value'];
+            if (a == 'basmala' && b == 'admin123'){
+                // alert('Welcome our Admin')
+                window.location.href="/admin/admin.html";
+            }
+            // if (a == 'admin' && b == 'admin') {
+            //     alert('Welcome Admin');
+            // }
+            // else {
+            //     alert('Hi ' + a);
+            // }
+        } 
+    </script>
+</body>
+
+</html>
